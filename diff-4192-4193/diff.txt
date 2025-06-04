@@ -1,0 +1,54 @@
+Added commands:
+
+Removed commands:
+
+	listVmwareDcHosts (Lists the VMs in a Vmware Datacenter)
+
+Changes in command type (sync versus async)
+
+
+Changes in commands arguments:
+
+	listVirtualMachines
+
+		Request:
+
+			New parameters: userdataid (optional) 
+
+	listVirtualMachinesMetrics
+
+		Request:
+
+			New parameters: userdataid (optional) 
+
+	listVmsForImport
+
+		Response:
+
+			New parameters: bootmode, boottype 
+
+	listVmwareDcVms
+
+		Request:
+
+			New parameters: hostname (optional), instancename (optional) 
+
+			Removed parameters: batchsize, host, token 
+
+		Response:
+
+			New parameters: bootmode, boottype, clusterid, clustername, cpucorepersocket, cpunumber, cpuspeed, hostid, hostname, memory, name, osdisplayname, osid, powerstate, disk(*), nic(*) 
+
+			Removed parameters: token 
+
+	listUnmanagedInstances
+
+		Response:
+
+			New parameters: bootmode, boottype 
+
+	listVnfAppliances
+
+		Request:
+
+			New parameters: userdataid (optional) 
