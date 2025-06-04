@@ -186,4 +186,4 @@ def main():
         json.dump(json_output, f, indent=2)
 
 if __name__ == '__main__':
-    main() 
+    main()
