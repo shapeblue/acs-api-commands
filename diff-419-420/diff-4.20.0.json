@@ -1,0 +1,2133 @@
+{
+  "commands_args_changed": [
+    {
+      "name": "activateProject",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "addBaremetalHost",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "explicithosttags"
+          },
+          {
+            "name": "implicithosttags"
+          }
+        ]
+      }
+    },
+    {
+      "name": "addHost",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "explicithosttags"
+          },
+          {
+            "name": "implicithosttags"
+          }
+        ]
+      }
+    },
+    {
+      "name": "addNicToVirtualMachine",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "assignVirtualMachine",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "assignVolume",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          }
+        ]
+      }
+    },
+    {
+      "name": "attachIso",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "attachVolume",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          }
+        ]
+      }
+    },
+    {
+      "name": "cancelHostAsDegraded",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "explicithosttags"
+          },
+          {
+            "name": "implicithosttags"
+          }
+        ]
+      }
+    },
+    {
+      "name": "cancelHostMaintenance",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "explicithosttags"
+          },
+          {
+            "name": "implicithosttags"
+          }
+        ]
+      }
+    },
+    {
+      "name": "changeOfferingForVolume",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          }
+        ]
+      }
+    },
+    {
+      "name": "changeServiceForVirtualMachine",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "checkVolume",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          }
+        ]
+      }
+    },
+    {
+      "name": "createAccount",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "createDiskOffering",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "suitableforvirtualmachine"
+          }
+        ]
+      }
+    },
+    {
+      "name": "createDomain",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "createNetwork",
+      "request": {
+        "params_new": [
+          {
+            "name": "asnumber",
+            "required": false
+          },
+          {
+            "name": "bgppeerids",
+            "required": false
+          },
+          {
+            "name": "cidrsize",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "asnumber"
+          },
+          {
+            "name": "asnumberid"
+          },
+          {
+            "name": "bgppeers"
+          },
+          {
+            "name": "ip4routes"
+          },
+          {
+            "name": "ip4routing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "createNetworkOffering",
+      "request": {
+        "params_new": [
+          {
+            "name": "fornsx",
+            "required": false
+          },
+          {
+            "name": "networkmode",
+            "required": false
+          },
+          {
+            "name": "nsxsupportlb",
+            "required": false
+          },
+          {
+            "name": "nsxsupportsinternallb",
+            "required": false
+          },
+          {
+            "name": "routingmode",
+            "required": false
+          },
+          {
+            "name": "specifyasnumber",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "supportsinternallb"
+          }
+        ]
+      }
+    },
+    {
+      "name": "createProject",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "createVPC",
+      "request": {
+        "params_new": [
+          {
+            "name": "asnumber",
+            "required": false
+          },
+          {
+            "name": "bgppeerids",
+            "required": false
+          },
+          {
+            "name": "cidrsize",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "asnumber"
+          },
+          {
+            "name": "asnumberid"
+          },
+          {
+            "name": "bgppeers"
+          },
+          {
+            "name": "ip4routes"
+          },
+          {
+            "name": "ip4routing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "createVPCOffering",
+      "request": {
+        "params_new": [
+          {
+            "name": "fornsx",
+            "required": false
+          },
+          {
+            "name": "networkmode",
+            "required": false
+          },
+          {
+            "name": "nsxsupportlb",
+            "required": false
+          },
+          {
+            "name": "routingmode",
+            "required": false
+          },
+          {
+            "name": "specifyasnumber",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": []
+      }
+    },
+    {
+      "name": "createVlanIpRange",
+      "request": {
+        "params_new": [
+          {
+            "name": "fornsx",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": []
+      }
+    },
+    {
+      "name": "createVolume",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          }
+        ]
+      }
+    },
+    {
+      "name": "createZone",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "isnsxenabled"
+          }
+        ]
+      }
+    },
+    {
+      "name": "declareHostAsDegraded",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "explicithosttags"
+          },
+          {
+            "name": "implicithosttags"
+          }
+        ]
+      }
+    },
+    {
+      "name": "deleteTemplate",
+      "request": {
+        "params_new": [
+          {
+            "name": "issystem",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": []
+      }
+    },
+    {
+      "name": "deleteVnfTemplate",
+      "request": {
+        "params_new": [
+          {
+            "name": "issystem",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": []
+      }
+    },
+    {
+      "name": "deployVirtualMachine",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "deployVnfAppliance",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "destroyVirtualMachine",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "destroyVolume",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          }
+        ]
+      }
+    },
+    {
+      "name": "detachIso",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "detachVolume",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          }
+        ]
+      }
+    },
+    {
+      "name": "disableAccount",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "enableAccount",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "extractSnapshot",
+      "request": {
+        "params_new": [
+          {
+            "name": "id",
+            "required": true
+          },
+          {
+            "name": "zoneid",
+            "required": true
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": []
+      }
+    },
+    {
+      "name": "importUnmanagedInstance",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "importVm",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "importVolume",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ldapCreateAccount",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listAccounts",
+      "request": {
+        "params_new": [
+          {
+            "name": "tag",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listBrocadeVcsDeviceNetworks",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "asnumber"
+          },
+          {
+            "name": "asnumberid"
+          },
+          {
+            "name": "bgppeers"
+          },
+          {
+            "name": "ip4routes"
+          },
+          {
+            "name": "ip4routing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listCapabilities",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "allowuserforcestopvm"
+          },
+          {
+            "name": "sharedfsvmmincpucount"
+          },
+          {
+            "name": "sharedfsvmminramsize"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listCapacity",
+      "request": {
+        "params_new": [
+          {
+            "name": "tag",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "tag"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listDiskOfferings",
+      "request": {
+        "params_new": [
+          {
+            "name": "virtualmachineid",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "suitableforvirtualmachine"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listDomainChildren",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listDomains",
+      "request": {
+        "params_new": [
+          {
+            "name": "tag",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listHostTags",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "isimplicit"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listHosts",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "explicithosttags"
+          },
+          {
+            "name": "implicithosttags"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listNetscalerLoadBalancerNetworks",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "asnumber"
+          },
+          {
+            "name": "asnumberid"
+          },
+          {
+            "name": "bgppeers"
+          },
+          {
+            "name": "ip4routes"
+          },
+          {
+            "name": "ip4routing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listNetworkOfferings",
+      "request": {
+        "params_new": [
+          {
+            "name": "routingmode",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "supportsinternallb"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listNetworks",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "asnumber"
+          },
+          {
+            "name": "asnumberid"
+          },
+          {
+            "name": "bgppeers"
+          },
+          {
+            "name": "ip4routes"
+          },
+          {
+            "name": "ip4routing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listNiciraNvpDeviceNetworks",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "asnumber"
+          },
+          {
+            "name": "asnumberid"
+          },
+          {
+            "name": "bgppeers"
+          },
+          {
+            "name": "ip4routes"
+          },
+          {
+            "name": "ip4routing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listPaloAltoFirewallNetworks",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "asnumber"
+          },
+          {
+            "name": "asnumberid"
+          },
+          {
+            "name": "bgppeers"
+          },
+          {
+            "name": "ip4routes"
+          },
+          {
+            "name": "ip4routing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listProjectAccounts",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listProjects",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listPublicIpAddresses",
+      "request": {
+        "params_new": [
+          {
+            "name": "forsystemvms",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": []
+      }
+    },
+    {
+      "name": "listResourceLimits",
+      "request": {
+        "params_new": [
+          {
+            "name": "tag",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "tag"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listServiceOfferings",
+      "request": {
+        "params_new": [
+          {
+            "name": "templateid",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": []
+      }
+    },
+    {
+      "name": "listVPCs",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "asnumber"
+          },
+          {
+            "name": "asnumberid"
+          },
+          {
+            "name": "bgppeers"
+          },
+          {
+            "name": "ip4routes"
+          },
+          {
+            "name": "ip4routing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listVirtualMachines",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listVnfAppliances",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listVolumes",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listZones",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "isnsxenabled"
+          }
+        ]
+      }
+    },
+    {
+      "name": "lockAccount",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "markDefaultZoneForAccount",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "migrateNetwork",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "asnumber"
+          },
+          {
+            "name": "asnumberid"
+          },
+          {
+            "name": "bgppeers"
+          },
+          {
+            "name": "ip4routes"
+          },
+          {
+            "name": "ip4routing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "migrateVPC",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "asnumber"
+          },
+          {
+            "name": "asnumberid"
+          },
+          {
+            "name": "bgppeers"
+          },
+          {
+            "name": "ip4routes"
+          },
+          {
+            "name": "ip4routing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "migrateVirtualMachine",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "migrateVirtualMachineWithVolume",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "migrateVolume",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          }
+        ]
+      }
+    },
+    {
+      "name": "moveDomain",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "prepareHostForMaintenance",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "explicithosttags"
+          },
+          {
+            "name": "implicithosttags"
+          }
+        ]
+      }
+    },
+    {
+      "name": "quotaTariffCreate",
+      "request": {
+        "params_new": [
+          {
+            "name": "position",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": []
+      }
+    },
+    {
+      "name": "quotaTariffUpdate",
+      "request": {
+        "params_new": [
+          {
+            "name": "position",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": []
+      }
+    },
+    {
+      "name": "rebootVirtualMachine",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "reconnectHost",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "explicithosttags"
+          },
+          {
+            "name": "implicithosttags"
+          }
+        ]
+      }
+    },
+    {
+      "name": "recoverVirtualMachine",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "recoverVolume",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          }
+        ]
+      }
+    },
+    {
+      "name": "removeNicFromVirtualMachine",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "resetPasswordForVirtualMachine",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "resetSSHKeyForVirtualMachine",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "resetUserDataForVirtualMachine",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "resizeVolume",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          }
+        ]
+      }
+    },
+    {
+      "name": "restoreVirtualMachine",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "revertToVMSnapshot",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "startVirtualMachine",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "stopVirtualMachine",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "suspendProject",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateAccount",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateDefaultNicForVirtualMachine",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateDiskOffering",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "suitableforvirtualmachine"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateDomain",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateHost",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "explicithosttags"
+          },
+          {
+            "name": "implicithosttags"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateNetwork",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "asnumber"
+          },
+          {
+            "name": "asnumberid"
+          },
+          {
+            "name": "bgppeers"
+          },
+          {
+            "name": "ip4routes"
+          },
+          {
+            "name": "ip4routing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateNetworkOffering",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "supportsinternallb"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateProject",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "taggedresources"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateResourceCount",
+      "request": {
+        "params_new": [
+          {
+            "name": "tag",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "tag"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateResourceLimit",
+      "request": {
+        "params_new": [
+          {
+            "name": "tag",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "tag"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateTemplate",
+      "request": {
+        "params_new": [
+          {
+            "name": "templatetag",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": []
+      }
+    },
+    {
+      "name": "updateVMAffinityGroup",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateVPC",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "asnumber"
+          },
+          {
+            "name": "asnumberid"
+          },
+          {
+            "name": "bgppeers"
+          },
+          {
+            "name": "ip4routes"
+          },
+          {
+            "name": "ip4routing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateVirtualMachine",
+      "request": {
+        "params_new": [
+          {
+            "name": "deleteprotection",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateVmNicIp",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          },
+          {
+            "name": "vmtype"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateVnfTemplate",
+      "request": {
+        "params_new": [
+          {
+            "name": "templatetag",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": []
+      }
+    },
+    {
+      "name": "updateVolume",
+      "request": {
+        "params_new": [
+          {
+            "name": "deleteprotection",
+            "required": false
+          }
+        ],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateZone",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "isnsxenabled"
+          }
+        ]
+      }
+    },
+    {
+      "name": "uploadVolume",
+      "request": {
+        "params_new": [],
+        "params_changed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "deleteprotection"
+          }
+        ]
+      }
+    }
+  ],
+  "commands_added": [
+    {
+      "name": "addBackupRepository",
+      "description": "Adds a backup repository to store NAS backups"
+    },
+    {
+      "name": "changeBgpPeersForNetwork",
+      "description": "Change the BGP peers for a network."
+    },
+    {
+      "name": "changeBgpPeersForVpc",
+      "description": "Change the BGP peers for a VPC."
+    },
+    {
+      "name": "changeSharedFileSystemDiskOffering",
+      "description": "Change Disk offering of a Shared FileSystem"
+    },
+    {
+      "name": "changeSharedFileSystemServiceOffering",
+      "description": "Change Service offering of a Shared FileSystem"
+    },
+    {
+      "name": "createASNRange",
+      "description": "Creates a range of Autonomous Systems for BGP Dynamic Routing"
+    },
+    {
+      "name": "createBgpPeer",
+      "description": "Creates a Bgp Peer for a zone."
+    },
+    {
+      "name": "createIpv4SubnetForGuestNetwork",
+      "description": "Creates a IPv4 subnet for guest networks."
+    },
+    {
+      "name": "createIpv4SubnetForZone",
+      "description": "Creates a IPv4 subnet for a zone."
+    },
+    {
+      "name": "createRoutingFirewallRule",
+      "description": "Creates a routing firewall rule in the given network in ROUTED mode"
+    },
+    {
+      "name": "createSharedFileSystem",
+      "description": "Create a new Shared File System of specified size and disk offering, attached to the given network"
+    },
+    {
+      "name": "createWebhook",
+      "description": "Creates a Webhook"
+    },
+    {
+      "name": "dedicateBgpPeer",
+      "description": "Dedicates an existing Bgp Peer to an account or a domain."
+    },
+    {
+      "name": "dedicateIpv4SubnetForZone",
+      "description": "Dedicates an existing IPv4 subnet for a zone to an account or a domain."
+    },
+    {
+      "name": "deleteASNRange",
+      "description": "deletes a range of Autonomous Systems for BGP Dynamic Routing"
+    },
+    {
+      "name": "deleteBackupRepository",
+      "description": "delete a backup repository"
+    },
+    {
+      "name": "deleteBgpPeer",
+      "description": "Deletes an existing Bgp Peer."
+    },
+    {
+      "name": "deleteIpv4SubnetForGuestNetwork",
+      "description": "Deletes an existing IPv4 subnet for guest network."
+    },
+    {
+      "name": "deleteIpv4SubnetForZone",
+      "description": "Deletes an existing IPv4 subnet for a zone."
+    },
+    {
+      "name": "deleteRoutingFirewallRule",
+      "description": "Deletes a routing firewall rule"
+    },
+    {
+      "name": "deleteWebhook",
+      "description": "Deletes a Webhook"
+    },
+    {
+      "name": "deleteWebhookDelivery",
+      "description": "Deletes Webhook delivery"
+    },
+    {
+      "name": "destroySharedFileSystem",
+      "description": "Destroy a Shared FileSystem by id"
+    },
+    {
+      "name": "disableRole",
+      "description": "Disables a role"
+    },
+    {
+      "name": "enableRole",
+      "description": "Enables a role"
+    },
+    {
+      "name": "executeWebhookDelivery",
+      "description": "Executes a Webhook delivery"
+    },
+    {
+      "name": "expungeSharedFileSystem",
+      "description": "Expunge a Shared FileSystem by id"
+    },
+    {
+      "name": "extractSnapshot",
+      "description": "Returns a download URL for extracting a snapshot. It must be in the Backed Up state."
+    },
+    {
+      "name": "forgotPassword",
+      "description": "Sends an email to the user with a token to reset the password using resetPassword command."
+    },
+    {
+      "name": "listASNRanges",
+      "description": "List Autonomous Systems Number Ranges"
+    },
+    {
+      "name": "listASNumbers",
+      "description": "List Autonomous Systems Numbers"
+    },
+    {
+      "name": "listBackupRepositories",
+      "description": "Lists all backup repositories"
+    },
+    {
+      "name": "listBgpPeers",
+      "description": "Lists Bgp Peers."
+    },
+    {
+      "name": "listIpv4SubnetsForGuestNetwork",
+      "description": "Lists IPv4 subnets for guest networks."
+    },
+    {
+      "name": "listIpv4SubnetsForZone",
+      "description": "Lists IPv4 subnets for zone."
+    },
+    {
+      "name": "listRoutingFirewallRules",
+      "description": "Lists all Routing firewall rules"
+    },
+    {
+      "name": "listSharedFileSystemProviders",
+      "description": "Lists all available shared filesystem providers."
+    },
+    {
+      "name": "listSharedFileSystems",
+      "description": "List Shared FileSystems"
+    },
+    {
+      "name": "listWebhookDeliveries",
+      "description": "Lists Webhook deliveries"
+    },
+    {
+      "name": "listWebhooks",
+      "description": "Lists Webhooks"
+    },
+    {
+      "name": "quotaConfigureEmail",
+      "description": "Configure a quota email template"
+    },
+    {
+      "name": "quotaListEmailConfiguration",
+      "description": "List quota email template configurations"
+    },
+    {
+      "name": "recoverSharedFileSystem",
+      "description": "Recover a Shared FileSystem by id"
+    },
+    {
+      "name": "releaseASNumber",
+      "description": "Releases an AS Number back to the pool"
+    },
+    {
+      "name": "releaseBgpPeer",
+      "description": "Releases an existing dedicated Bgp Peer."
+    },
+    {
+      "name": "releaseIpv4SubnetForZone",
+      "description": "Releases an existing dedicated IPv4 subnet for a zone."
+    },
+    {
+      "name": "resetPassword",
+      "description": "Resets the password for the user using the token generated via forgotPassword command."
+    },
+    {
+      "name": "restartSharedFileSystem",
+      "description": "Restart a Shared FileSystem"
+    },
+    {
+      "name": "startSharedFileSystem",
+      "description": "Start a Shared FileSystem"
+    },
+    {
+      "name": "stopSharedFileSystem",
+      "description": "Stop a Shared FileSystem"
+    },
+    {
+      "name": "updateBgpPeer",
+      "description": "Updates an existing Bgp Peer."
+    },
+    {
+      "name": "updateIpv4SubnetForZone",
+      "description": "Updates an existing IPv4 subnet for a zone."
+    },
+    {
+      "name": "updateRoutingFirewallRule",
+      "description": "Updates Routing firewall rule with specified ID"
+    },
+    {
+      "name": "updateSharedFileSystem",
+      "description": "Update a Shared FileSystem"
+    },
+    {
+      "name": "updateWebhook",
+      "description": "Updates a Webhook"
+    }
+  ],
+  "commands_removed": [],
+  "commands_sync_changed": []
+}

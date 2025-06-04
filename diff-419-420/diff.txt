@@ -58,9 +58,9 @@ Added commands:
 
     restartSharedFileSystem (Restart a Shared FileSystem)
 
-    forgotPassword (Sends an email to the user with a token to reset the password using resetPassword command.)
-
     listASNRanges (List Autonomous Systems Number Ranges)
+
+    forgotPassword (Sends an email to the user with a token to reset the password using resetPassword command.)
 
     resetPassword (Resets the password for the user using the token generated via forgotPassword command.)
 
@@ -145,9 +145,21 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: taggedresources 
+			New parameters: apikeyaccess, taggedresources 
 
 	copyIso
+
+		Response:
+
+			New parameters: arch 
+
+	listVsphereStoragePolicyCompatiblePools
+
+		Response:
+
+			New parameters: usediops 
+
+	rebootSystemVm
 
 		Response:
 
@@ -167,7 +179,7 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	updateHost
 
@@ -175,11 +187,33 @@ Changes in commands arguments:
 
 			New parameters: arch, explicithosttags, implicithosttags 
 
-	listClusters
+	destroySystemVm
 
 		Response:
 
 			New parameters: arch 
+
+	scaleSystemVm
+
+		Response:
+
+			New parameters: arch 
+
+	listClusters
+
+		Request:
+
+			New parameters: arch (optional) 
+
+		Response:
+
+			New parameters: arch 
+
+	listClustersMetrics
+
+		Request:
+
+			New parameters: arch (optional) 
 
 	listStoragePoolObjects
 
@@ -187,17 +221,35 @@ Changes in commands arguments:
 
 			New parameters: snapshotname, templatename, volumename 
 
+	startRouter
+
+		Response:
+
+			New parameters: arch 
+
 	updateVPC
 
 		Response:
 
 			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing 
 
+	stopSystemVm
+
+		Response:
+
+			New parameters: arch 
+
 	updateVmNicIp
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
+
+	startInternalLoadBalancerVM
+
+		Response:
+
+			New parameters: arch 
 
 	updateDiskOffering
 
@@ -229,11 +281,27 @@ Changes in commands arguments:
 
 			New parameters: deleteprotection 
 
+	listManagementServersMetrics
+
+		Request:
+
+			New parameters: peers (optional) 
+
 	updateDomain
 
 		Response:
 
 			New parameters: taggedresources 
+
+	listSystemVms
+
+		Request:
+
+			New parameters: arch (optional) 
+
+		Response:
+
+			New parameters: arch 
 
 	detachVolume
 
@@ -241,17 +309,29 @@ Changes in commands arguments:
 
 			New parameters: deleteprotection 
 
+	listStoragePools
+
+		Response:
+
+			New parameters: usediops 
+
 	findHostsForMigration
 
 		Response:
 
-			New parameters: explicithosttags, implicithosttags 
+			Removed parameters: id, averageload, capabilities, clusterid, clustername, clustertype, cpuallocated, cpuallocatedpercentage, cpuallocatedvalue, cpuallocatedwithoverprovisioning, cpunumber, cpuspeed, cpuused, cpuwithoverprovisioning, created, disconnected, disksizeallocated, disksizetotal, events, hahost, hasenoughcapacity, hosttags, hypervisor, hypervisorversion, ipaddress, islocalstorageactive, lastpinged, managementserverid, memoryallocated, memoryallocatedbytes, memoryallocatedpercentage, memorytotal, memoryused, memorywithoverprovisioning, name, networkkbsread, networkkbswrite, oscategoryid, oscategoryname, podid, podname, removed, resourcestate, state, suitableformigration, type, version, zoneid, zonename 
+
+	isAccountAllowedToCreateOfferingsWithTags
+
+		Request:
+
+			Changed parameters: id (old version - optional, new version - required) 
 
 	addNicToVirtualMachine
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	listPublicIpAddresses
 
@@ -267,7 +347,7 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	copyTemplate
 
@@ -279,9 +359,13 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing 
+			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing, specifyvlan 
 
 	resizeVolume
+
+		Request:
+
+			New parameters: automigrate (optional) 
 
 		Response:
 
@@ -297,7 +381,7 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing 
+			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing, specifyvlan 
 
 	listUsageTypes
 
@@ -311,13 +395,13 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	resetPasswordForVirtualMachine
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	createVPC
 
@@ -335,7 +419,7 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	prepareHostForMaintenance
 
@@ -345,9 +429,13 @@ Changes in commands arguments:
 
 	listVirtualMachines
 
+		Request:
+
+			New parameters: arch (optional), userdataid (optional) 
+
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	listDiskOfferings
 
@@ -369,13 +457,13 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: taggedresources 
+			New parameters: apikeyaccess, taggedresources 
 
 	revertToVMSnapshot
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	registerIso
 
@@ -387,6 +475,12 @@ Changes in commands arguments:
 
 			New parameters: arch 
 
+	listVlanIpRanges
+
+		Response:
+
+			New parameters: fornsx 
+
 	cancelHostMaintenance
 
 		Response:
@@ -397,13 +491,7 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: asnrange, ismultiarch, isnsxenabled 
-
-	listVlanIpRanges
-
-		Response:
-
-			New parameters: fornsx 
+			New parameters: asnrange, ismultiarch, isnsxenabled, routedmodeenabled 
 
 	listProjectAccounts
 
@@ -421,7 +509,17 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
+
+	updateUser
+
+		Request:
+
+			New parameters: apikeyaccess (optional) 
+
+		Response:
+
+			New parameters: apikeyaccess 
 
 	attachVolume
 
@@ -441,17 +539,31 @@ Changes in commands arguments:
 
 			New parameters: taggedresources 
 
+	registerUserKeys
+
+		Response:
+
+			New parameters: apikeyaccess 
+
 	listZones
 
 		Response:
 
-			New parameters: asnrange, ismultiarch, isnsxenabled 
+			New parameters: asnrange, ismultiarch, isnsxenabled, routedmodeenabled 
+
+	deleteBackupSchedule
+
+		Request:
+
+			New parameters: id (optional) 
+
+			Changed parameters: virtualmachineid (old version - required, new version - optional) 
 
 	listNetscalerLoadBalancerNetworks
 
 		Response:
 
-			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing 
+			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing, specifyvlan 
 
 	migrateVolume
 
@@ -475,7 +587,13 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
+
+	migrateSystemVm
+
+		Response:
+
+			New parameters: arch 
 
 	cancelHostAsDegraded
 
@@ -487,13 +605,19 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing 
+			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing, specifyvlan 
 
 	importRole
 
 		Response:
 
 			New parameters: state 
+
+	enableUser
+
+		Response:
+
+			New parameters: apikeyaccess 
 
 	quotaTariffCreate
 
@@ -517,7 +641,7 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: asnrange, ismultiarch, isnsxenabled 
+			New parameters: asnrange, ismultiarch, isnsxenabled, routedmodeenabled 
 
 	listDomainChildren
 
@@ -529,13 +653,19 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	attachIso
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
+
+	createUser
+
+		Response:
+
+			New parameters: apikeyaccess 
 
 	generateUsageRecords
 
@@ -547,11 +677,17 @@ Changes in commands arguments:
 
 		Request:
 
-			New parameters: tag (optional) 
+			New parameters: apikeyaccess (optional), tag (optional) 
 
 		Response:
 
-			New parameters: taggedresources 
+			New parameters: apikeyaccess, taggedresources 
+
+	destroyRouter
+
+		Response:
+
+			New parameters: arch 
 
 	activateProject
 
@@ -575,19 +711,35 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	startVirtualMachine
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
+
+	listVirtualMachinesMetrics
+
+		Request:
+
+			New parameters: arch (optional), userdataid (optional) 
 
 	listHosts
+
+		Request:
+
+			New parameters: arch (optional) 
 
 		Response:
 
 			New parameters: arch, explicithosttags, implicithosttags 
+
+	updateStoragePool
+
+		Response:
+
+			New parameters: usediops 
 
 	moveDomain
 
@@ -599,7 +751,13 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing 
+			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing, specifyvlan 
+
+	listHostsMetrics
+
+		Request:
+
+			New parameters: arch (optional) 
 
 	listAffinityGroups
 
@@ -629,13 +787,19 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: taggedresources 
+			New parameters: apikeyaccess, taggedresources 
+
+	stopRouter
+
+		Response:
+
+			New parameters: arch 
 
 	changeServiceForVirtualMachine
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	listTemplates
 
@@ -657,7 +821,7 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	listVnfTemplates
 
@@ -673,7 +837,7 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	updateNetworkOffering
 
@@ -703,6 +867,12 @@ Changes in commands arguments:
 
 			Removed parameters: uuid 
 
+	stopNetScalerVpx
+
+		Response:
+
+			New parameters: arch 
+
 	destroyVolume
 
 		Response:
@@ -719,7 +889,19 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: taggedresources 
+			New parameters: apikeyaccess, taggedresources 
+
+	changeServiceForSystemVm
+
+		Response:
+
+			New parameters: arch 
+
+	rebootRouter
+
+		Response:
+
+			New parameters: arch 
 
 	listImageStoreObjects
 
@@ -743,11 +925,23 @@ Changes in commands arguments:
 
 			New parameters: arch 
 
+	stopInternalLoadBalancerVM
+
+		Response:
+
+			New parameters: arch 
+
 	createDomain
 
 		Response:
 
 			New parameters: taggedresources 
+
+	updateStorageCapabilities
+
+		Response:
+
+			New parameters: usediops 
 
 	assignVolume
 
@@ -769,7 +963,13 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
+
+	listVmsForImport
+
+		Response:
+
+			New parameters: bootmode, boottype 
 
 	updateTemplate
 
@@ -795,7 +995,23 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing 
+			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing, specifyvlan 
+
+	listManagementServers
+
+		Request:
+
+			New parameters: peers (optional) 
+
+		Response:
+
+			New parameters: ipaddress, peers 
+
+	changeServiceForRouter
+
+		Response:
+
+			New parameters: arch 
 
 	updateVolume
 
@@ -815,19 +1031,23 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	updateAccount
 
+		Request:
+
+			New parameters: apikeyaccess (optional) 
+
 		Response:
 
-			New parameters: taggedresources 
+			New parameters: apikeyaccess, taggedresources 
 
 	disableAccount
 
 		Response:
 
-			New parameters: taggedresources 
+			New parameters: apikeyaccess, taggedresources 
 
 	listDomains
 
@@ -843,7 +1063,7 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	deleteTemplate
 
@@ -863,6 +1083,12 @@ Changes in commands arguments:
 
 			New parameters: arch 
 
+	updatePortForwardingRule
+
+		Request:
+
+			New parameters: cidrlist (optional) 
+
 	associateIpAddress
 
 		Response:
@@ -873,7 +1099,7 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	addKubernetesSupportedVersion
 
@@ -881,7 +1107,23 @@ Changes in commands arguments:
 
 			New parameters: arch (optional) 
 
+		Response:
+
+			New parameters: arch 
+
 	linkUserDataToTemplate
+
+		Response:
+
+			New parameters: arch 
+
+	listInternalLoadBalancerVMs
+
+		Response:
+
+			New parameters: arch 
+
+	updateKubernetesSupportedVersion
 
 		Response:
 
@@ -893,6 +1135,16 @@ Changes in commands arguments:
 
 			New parameters: state 
 
+	listVmwareDcVms
+
+		Request:
+
+			New parameters: hostname (optional), instancename (optional) 
+
+		Response:
+
+			New parameters: bootmode, boottype 
+
 	updateCluster
 
 		Request:
@@ -902,6 +1154,12 @@ Changes in commands arguments:
 		Response:
 
 			New parameters: arch 
+
+	getUserKeys
+
+		Response:
+
+			New parameters: apikeyaccess 
 
 	listHostTags
 
@@ -913,13 +1171,19 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	listVolumes
 
 		Response:
 
 			New parameters: deleteprotection 
+
+	lockUser
+
+		Response:
+
+			New parameters: apikeyaccess 
 
 	createNetwork
 
@@ -929,7 +1193,7 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing 
+			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing, specifyvlan 
 
 	listNetworkOfferings
 
@@ -947,6 +1211,16 @@ Changes in commands arguments:
 
 			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing 
 
+	listUsers
+
+		Request:
+
+			New parameters: apikeyaccess (optional) 
+
+		Response:
+
+			New parameters: apikeyaccess 
+
 	updateVlanIpRange
 
 		Response:
@@ -963,6 +1237,12 @@ Changes in commands arguments:
 
 			New parameters: tag 
 
+	disableUser
+
+		Response:
+
+			New parameters: apikeyaccess 
+
 	listIsos
 
 		Request:
@@ -978,6 +1258,12 @@ Changes in commands arguments:
 		Response:
 
 			New parameters: state 
+
+	startSystemVm
+
+		Response:
+
+			New parameters: arch 
 
 	registerVnfTemplate
 
@@ -999,13 +1285,19 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	getUploadParamsForTemplate
 
 		Request:
 
 			New parameters: arch (optional) 
+
+	syncStoragePool
+
+		Response:
+
+			New parameters: usediops 
 
 	updateResourceCount
 
@@ -1027,6 +1319,26 @@ Changes in commands arguments:
 
 			New parameters: state 
 
+	listRouters
+
+		Request:
+
+			New parameters: arch (optional) 
+
+		Response:
+
+			New parameters: arch 
+
+	listKubernetesSupportedVersions
+
+		Request:
+
+			New parameters: arch (optional) 
+
+		Response:
+
+			New parameters: arch 
+
 	recoverVolume
 
 		Response:
@@ -1043,7 +1355,13 @@ Changes in commands arguments:
 
 		Response:
 
-			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing 
+			New parameters: asnumber, asnumberid, bgppeers, ip4routes, ip4routing, specifyvlan 
+
+	listUnmanagedInstances
+
+		Response:
+
+			New parameters: bootmode, boottype 
 
 	registerTemplate
 
@@ -1057,15 +1375,37 @@ Changes in commands arguments:
 
 	listVnfAppliances
 
+		Request:
+
+			New parameters: arch (optional), userdataid (optional) 
+
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
+
+	findStoragePoolsForMigration
+
+		Response:
+
+			New parameters: usediops 
+
+	createStoragePool
+
+		Response:
+
+			New parameters: usediops 
 
 	createVolume
 
 		Response:
 
 			New parameters: deleteprotection 
+
+	enableStorageMaintenance
+
+		Response:
+
+			New parameters: usediops 
 
 	removeSecondaryStorageSelector
 
@@ -1074,6 +1414,18 @@ Changes in commands arguments:
 			New parameters: displaytext, success 
 
 			Removed parameters: id, created, description, heuristicrule, name, removed, type, zoneid 
+
+	cancelStorageMaintenance
+
+		Response:
+
+			New parameters: usediops 
+
+	removeNicFromVirtualMachine
+
+		Response:
+
+			New parameters: arch, deleteprotection, vmtype 
 
 	addCluster
 
@@ -1085,23 +1437,23 @@ Changes in commands arguments:
 
 			New parameters: arch 
 
-	removeNicFromVirtualMachine
-
-		Response:
-
-			New parameters: deleteprotection, vmtype 
-
 	enableAccount
 
 		Response:
 
-			New parameters: taggedresources 
+			New parameters: apikeyaccess, taggedresources 
 
 	reconnectHost
 
 		Response:
 
 			New parameters: arch, explicithosttags, implicithosttags 
+
+	getUser
+
+		Response:
+
+			New parameters: apikeyaccess 
 
 	updateVnfTemplate
 
@@ -1131,9 +1483,13 @@ Changes in commands arguments:
 
 	importVm
 
+		Request:
+
+			New parameters: importinstancehostid (optional) 
+
 		Response:
 
-			New parameters: deleteprotection, vmtype 
+			New parameters: arch, deleteprotection, vmtype 
 
 	listCapacity
 
@@ -1145,12 +1501,6 @@ Changes in commands arguments:
 
 			New parameters: tag 
 
-	stopVirtualMachine
-
-		Response:
-
-			New parameters: deleteprotection, vmtype 
-
 	updateServiceOffering
 
 		Request:
@@ -1160,3 +1510,9 @@ Changes in commands arguments:
 		Response:
 
 			New parameters: purgeresources 
+
+	stopVirtualMachine
+
+		Response:
+
+			New parameters: arch, deleteprotection, vmtype 

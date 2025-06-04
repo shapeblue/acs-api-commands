@@ -1,0 +1,570 @@
+Changes in commands arguments:
+
+	addKubernetesSupportedVersion
+
+		Response:
+
+			New parameters: arch
+
+	addNicToVirtualMachine
+
+		Response:
+
+			New parameters: arch
+
+	assignVirtualMachine
+
+		Response:
+
+			New parameters: arch
+
+	attachIso
+
+		Response:
+
+			New parameters: arch
+
+	cancelStorageMaintenance
+
+		Response:
+
+			New parameters: usediops
+
+	changeServiceForRouter
+
+		Response:
+
+			New parameters: arch
+
+	changeServiceForSystemVm
+
+		Response:
+
+			New parameters: arch
+
+	changeServiceForVirtualMachine
+
+		Response:
+
+			New parameters: arch
+
+	createAccount
+
+		Response:
+
+			New parameters: apikeyaccess
+
+	createStoragePool
+
+		Response:
+
+			New parameters: usediops
+
+	createUser
+
+		Response:
+
+			New parameters: apikeyaccess
+
+	createVPC
+
+		Request:
+
+			Changed parameters: cidr (old version - required, new version - optional)
+
+	createVPCOffering
+
+		Request:
+
+			Changed parameters: supportedservices (old version - required, new version - optional)
+
+	createZone
+
+		Response:
+
+			New parameters: routedmodeenabled
+
+	deleteBackupSchedule
+
+		Request:
+
+			New parameters: id (optional)
+
+			Changed parameters: virtualmachineid (old version - required, new version - optional)
+
+	deployVirtualMachine
+
+		Response:
+
+			New parameters: arch
+
+	deployVnfAppliance
+
+		Response:
+
+			New parameters: arch
+
+	destroyRouter
+
+		Response:
+
+			New parameters: arch
+
+	destroySystemVm
+
+		Response:
+
+			New parameters: arch
+
+	destroyVirtualMachine
+
+		Response:
+
+			New parameters: arch
+
+	detachIso
+
+		Response:
+
+			New parameters: arch
+
+	disableAccount
+
+		Response:
+
+			New parameters: apikeyaccess
+
+	disableUser
+
+		Response:
+
+			New parameters: apikeyaccess
+
+	enableAccount
+
+		Response:
+
+			New parameters: apikeyaccess
+
+	enableStorageMaintenance
+
+		Response:
+
+			New parameters: usediops
+
+	enableUser
+
+		Response:
+
+			New parameters: apikeyaccess
+
+	findStoragePoolsForMigration
+
+		Response:
+
+			New parameters: usediops
+
+	generateUsageRecords
+
+		Request:
+
+			Changed parameters: enddate (old version - required, new version - optional), startdate (old version - required, new version - optional)
+
+	getUser
+
+		Response:
+
+			New parameters: apikeyaccess
+
+	importUnmanagedInstance
+
+		Response:
+
+			New parameters: arch
+
+	importVm
+
+		Response:
+
+			New parameters: arch
+
+	isAccountAllowedToCreateOfferingsWithTags
+
+		Request:
+
+			Changed parameters: id (old version - optional, new version - required)
+
+	ldapCreateAccount
+
+		Response:
+
+			New parameters: apikeyaccess
+
+	listAccounts
+
+		Request:
+
+			New parameters: apikeyaccess (optional)
+
+		Response:
+
+			New parameters: apikeyaccess
+
+	listClusters
+
+		Request:
+
+			New parameters: arch (optional)
+
+	listClustersMetrics
+
+		Request:
+
+			New parameters: arch (optional)
+
+	listHosts
+
+		Request:
+
+			New parameters: arch (optional)
+
+	listHostsMetrics
+
+		Request:
+
+			New parameters: arch (optional)
+
+	listInternalLoadBalancerVMs
+
+		Response:
+
+			New parameters: arch
+
+	listKubernetesSupportedVersions
+
+		Response:
+
+			New parameters: arch
+
+	listManagementServers
+
+		Request:
+
+			New parameters: peers (optional)
+
+	listManagementServersMetrics
+
+		Request:
+
+			New parameters: peers (optional)
+
+	listRouters
+
+		Request:
+
+			New parameters: arch (optional)
+
+		Response:
+
+			New parameters: arch
+
+	listStoragePools
+
+		Response:
+
+			New parameters: usediops
+
+	listSystemVms
+
+		Request:
+
+			New parameters: arch (optional)
+
+		Response:
+
+			New parameters: arch
+
+	listUsers
+
+		Request:
+
+			New parameters: apikeyaccess (optional)
+
+		Response:
+
+			New parameters: apikeyaccess
+
+	listVirtualMachines
+
+		Request:
+
+			New parameters: arch (optional), userdataid (optional)
+
+		Response:
+
+			New parameters: arch
+
+	listVirtualMachinesMetrics
+
+		Request:
+
+			New parameters: arch (optional), userdataid (optional)
+
+	listVnfAppliances
+
+		Request:
+
+			New parameters: arch (optional), userdataid (optional)
+
+		Response:
+
+			New parameters: arch
+
+	listVsphereStoragePolicyCompatiblePools
+
+		Response:
+
+			New parameters: usediops
+
+	listZones
+
+		Response:
+
+			New parameters: routedmodeenabled
+
+	lockAccount
+
+		Response:
+
+			New parameters: apikeyaccess
+
+	lockUser
+
+		Response:
+
+			New parameters: apikeyaccess
+
+	markDefaultZoneForAccount
+
+		Response:
+
+			New parameters: apikeyaccess
+
+	migrateSystemVm
+
+		Response:
+
+			New parameters: arch
+
+	migrateVirtualMachine
+
+		Response:
+
+			New parameters: arch
+
+	migrateVirtualMachineWithVolume
+
+		Response:
+
+			New parameters: arch
+
+	rebootRouter
+
+		Response:
+
+			New parameters: arch
+
+	rebootSystemVm
+
+		Response:
+
+			New parameters: arch
+
+	rebootVirtualMachine
+
+		Response:
+
+			New parameters: arch
+
+	recoverVirtualMachine
+
+		Response:
+
+			New parameters: arch
+
+	removeNicFromVirtualMachine
+
+		Response:
+
+			New parameters: arch
+
+	resetPasswordForVirtualMachine
+
+		Response:
+
+			New parameters: arch
+
+	resetSSHKeyForVirtualMachine
+
+		Response:
+
+			New parameters: arch
+
+	resetUserDataForVirtualMachine
+
+		Response:
+
+			New parameters: arch
+
+	resizeVolume
+
+		Request:
+
+			New parameters: automigrate (optional)
+
+	restoreVirtualMachine
+
+		Response:
+
+			New parameters: arch
+
+	revertToVMSnapshot
+
+		Response:
+
+			New parameters: arch
+
+	scaleSystemVm
+
+		Response:
+
+			New parameters: arch
+
+	startInternalLoadBalancerVM
+
+		Response:
+
+			New parameters: arch
+
+	startRouter
+
+		Response:
+
+			New parameters: arch
+
+	startSystemVm
+
+		Response:
+
+			New parameters: arch
+
+	startVirtualMachine
+
+		Response:
+
+			New parameters: arch
+
+	stopInternalLoadBalancerVM
+
+		Response:
+
+			New parameters: arch
+
+	stopNetScalerVpx
+
+		Response:
+
+			New parameters: arch
+
+	stopRouter
+
+		Response:
+
+			New parameters: arch
+
+	stopSystemVm
+
+		Response:
+
+			New parameters: arch
+
+	stopVirtualMachine
+
+		Response:
+
+			New parameters: arch
+
+	syncStoragePool
+
+		Response:
+
+			New parameters: usediops
+
+	updateAccount
+
+		Request:
+
+			New parameters: apikeyaccess (optional)
+
+		Response:
+
+			New parameters: apikeyaccess
+
+	updateDefaultNicForVirtualMachine
+
+		Response:
+
+			New parameters: arch
+
+	updateKubernetesSupportedVersion
+
+		Response:
+
+			New parameters: arch
+
+	updateStorageCapabilities
+
+		Response:
+
+			New parameters: usediops
+
+	updateStoragePool
+
+		Response:
+
+			New parameters: usediops
+
+	updateUser
+
+		Request:
+
+			New parameters: apikeyaccess (optional)
+
+		Response:
+
+			New parameters: apikeyaccess
+
+	updateVMAffinityGroup
+
+		Response:
+
+			New parameters: arch
+
+	updateVirtualMachine
+
+		Response:
+
+			New parameters: arch
+
+	updateVmNicIp
+
+		Response:
+
+			New parameters: arch
+
+	updateZone
+
+		Response:
+
+			New parameters: routedmodeenabled
+

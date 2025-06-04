@@ -1,0 +1,1043 @@
+{
+  "commands_args_changed": [
+    {
+      "name": "addKubernetesSupportedVersion",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "addNicToVirtualMachine",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "assignVirtualMachine",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "attachIso",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "cancelStorageMaintenance",
+      "response": {
+        "params_new": [
+          {
+            "name": "usediops"
+          }
+        ]
+      }
+    },
+    {
+      "name": "changeServiceForRouter",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "changeServiceForSystemVm",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "changeServiceForVirtualMachine",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "createAccount",
+      "response": {
+        "params_new": [
+          {
+            "name": "apikeyaccess"
+          }
+        ]
+      }
+    },
+    {
+      "name": "createStoragePool",
+      "response": {
+        "params_new": [
+          {
+            "name": "usediops"
+          }
+        ]
+      }
+    },
+    {
+      "name": "createUser",
+      "response": {
+        "params_new": [
+          {
+            "name": "apikeyaccess"
+          }
+        ]
+      }
+    },
+    {
+      "name": "createVPC",
+      "request": {
+        "params_new": [],
+        "params_changed": [
+          {
+            "name": "cidr",
+            "required_old": true,
+            "required_new": false
+          }
+        ],
+        "params_removed": []
+      }
+    },
+    {
+      "name": "createVPCOffering",
+      "request": {
+        "params_new": [],
+        "params_changed": [
+          {
+            "name": "supportedservices",
+            "required_old": true,
+            "required_new": false
+          }
+        ],
+        "params_removed": []
+      }
+    },
+    {
+      "name": "createZone",
+      "response": {
+        "params_new": [
+          {
+            "name": "routedmodeenabled"
+          }
+        ]
+      }
+    },
+    {
+      "name": "deleteBackupSchedule",
+      "request": {
+        "params_new": [
+          {
+            "name": "id",
+            "required": false
+          }
+        ],
+        "params_changed": [
+          {
+            "name": "virtualmachineid",
+            "required_old": true,
+            "required_new": false
+          }
+        ],
+        "params_removed": []
+      }
+    },
+    {
+      "name": "deployVirtualMachine",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "deployVnfAppliance",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "destroyRouter",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "destroySystemVm",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "destroyVirtualMachine",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "detachIso",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "disableAccount",
+      "response": {
+        "params_new": [
+          {
+            "name": "apikeyaccess"
+          }
+        ]
+      }
+    },
+    {
+      "name": "disableUser",
+      "response": {
+        "params_new": [
+          {
+            "name": "apikeyaccess"
+          }
+        ]
+      }
+    },
+    {
+      "name": "enableAccount",
+      "response": {
+        "params_new": [
+          {
+            "name": "apikeyaccess"
+          }
+        ]
+      }
+    },
+    {
+      "name": "enableStorageMaintenance",
+      "response": {
+        "params_new": [
+          {
+            "name": "usediops"
+          }
+        ]
+      }
+    },
+    {
+      "name": "enableUser",
+      "response": {
+        "params_new": [
+          {
+            "name": "apikeyaccess"
+          }
+        ]
+      }
+    },
+    {
+      "name": "findStoragePoolsForMigration",
+      "response": {
+        "params_new": [
+          {
+            "name": "usediops"
+          }
+        ]
+      }
+    },
+    {
+      "name": "generateUsageRecords",
+      "request": {
+        "params_new": [],
+        "params_changed": [
+          {
+            "name": "enddate",
+            "required_old": true,
+            "required_new": false
+          },
+          {
+            "name": "startdate",
+            "required_old": true,
+            "required_new": false
+          }
+        ],
+        "params_removed": []
+      }
+    },
+    {
+      "name": "getUser",
+      "response": {
+        "params_new": [
+          {
+            "name": "apikeyaccess"
+          }
+        ]
+      }
+    },
+    {
+      "name": "importUnmanagedInstance",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "importVm",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "isAccountAllowedToCreateOfferingsWithTags",
+      "request": {
+        "params_new": [],
+        "params_changed": [
+          {
+            "name": "id",
+            "required_old": false,
+            "required_new": true
+          }
+        ],
+        "params_removed": []
+      }
+    },
+    {
+      "name": "ldapCreateAccount",
+      "response": {
+        "params_new": [
+          {
+            "name": "apikeyaccess"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listAccounts",
+      "request": {
+        "params_new": [
+          {
+            "name": "apikeyaccess",
+            "required": false
+          }
+        ],
+        "params_changed": [],
+        "params_removed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "apikeyaccess"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listClusters",
+      "request": {
+        "params_new": [
+          {
+            "name": "arch",
+            "required": false
+          }
+        ],
+        "params_changed": [],
+        "params_removed": []
+      }
+    },
+    {
+      "name": "listClustersMetrics",
+      "request": {
+        "params_new": [
+          {
+            "name": "arch",
+            "required": false
+          }
+        ],
+        "params_changed": [],
+        "params_removed": []
+      }
+    },
+    {
+      "name": "listHosts",
+      "request": {
+        "params_new": [
+          {
+            "name": "arch",
+            "required": false
+          }
+        ],
+        "params_changed": [],
+        "params_removed": []
+      }
+    },
+    {
+      "name": "listHostsMetrics",
+      "request": {
+        "params_new": [
+          {
+            "name": "arch",
+            "required": false
+          }
+        ],
+        "params_changed": [],
+        "params_removed": []
+      }
+    },
+    {
+      "name": "listInternalLoadBalancerVMs",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listKubernetesSupportedVersions",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listManagementServers",
+      "request": {
+        "params_new": [
+          {
+            "name": "peers",
+            "required": false
+          }
+        ],
+        "params_changed": [],
+        "params_removed": []
+      }
+    },
+    {
+      "name": "listManagementServersMetrics",
+      "request": {
+        "params_new": [
+          {
+            "name": "peers",
+            "required": false
+          }
+        ],
+        "params_changed": [],
+        "params_removed": []
+      }
+    },
+    {
+      "name": "listRouters",
+      "request": {
+        "params_new": [
+          {
+            "name": "arch",
+            "required": false
+          }
+        ],
+        "params_changed": [],
+        "params_removed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listStoragePools",
+      "response": {
+        "params_new": [
+          {
+            "name": "usediops"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listSystemVms",
+      "request": {
+        "params_new": [
+          {
+            "name": "arch",
+            "required": false
+          }
+        ],
+        "params_changed": [],
+        "params_removed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listUsers",
+      "request": {
+        "params_new": [
+          {
+            "name": "apikeyaccess",
+            "required": false
+          }
+        ],
+        "params_changed": [],
+        "params_removed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "apikeyaccess"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listVirtualMachines",
+      "request": {
+        "params_new": [
+          {
+            "name": "arch",
+            "required": false
+          },
+          {
+            "name": "userdataid",
+            "required": false
+          }
+        ],
+        "params_changed": [],
+        "params_removed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listVirtualMachinesMetrics",
+      "request": {
+        "params_new": [
+          {
+            "name": "arch",
+            "required": false
+          },
+          {
+            "name": "userdataid",
+            "required": false
+          }
+        ],
+        "params_changed": [],
+        "params_removed": []
+      }
+    },
+    {
+      "name": "listVnfAppliances",
+      "request": {
+        "params_new": [
+          {
+            "name": "arch",
+            "required": false
+          },
+          {
+            "name": "userdataid",
+            "required": false
+          }
+        ],
+        "params_changed": [],
+        "params_removed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listVsphereStoragePolicyCompatiblePools",
+      "response": {
+        "params_new": [
+          {
+            "name": "usediops"
+          }
+        ]
+      }
+    },
+    {
+      "name": "listZones",
+      "response": {
+        "params_new": [
+          {
+            "name": "routedmodeenabled"
+          }
+        ]
+      }
+    },
+    {
+      "name": "lockAccount",
+      "response": {
+        "params_new": [
+          {
+            "name": "apikeyaccess"
+          }
+        ]
+      }
+    },
+    {
+      "name": "lockUser",
+      "response": {
+        "params_new": [
+          {
+            "name": "apikeyaccess"
+          }
+        ]
+      }
+    },
+    {
+      "name": "markDefaultZoneForAccount",
+      "response": {
+        "params_new": [
+          {
+            "name": "apikeyaccess"
+          }
+        ]
+      }
+    },
+    {
+      "name": "migrateSystemVm",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "migrateVirtualMachine",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "migrateVirtualMachineWithVolume",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "rebootRouter",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "rebootSystemVm",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "rebootVirtualMachine",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "recoverVirtualMachine",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "removeNicFromVirtualMachine",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "resetPasswordForVirtualMachine",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "resetSSHKeyForVirtualMachine",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "resetUserDataForVirtualMachine",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "resizeVolume",
+      "request": {
+        "params_new": [
+          {
+            "name": "automigrate",
+            "required": false
+          }
+        ],
+        "params_changed": [],
+        "params_removed": []
+      }
+    },
+    {
+      "name": "restoreVirtualMachine",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "revertToVMSnapshot",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "scaleSystemVm",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "startInternalLoadBalancerVM",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "startRouter",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "startSystemVm",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "startVirtualMachine",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "stopInternalLoadBalancerVM",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "stopNetScalerVpx",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "stopRouter",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "stopSystemVm",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "stopVirtualMachine",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "syncStoragePool",
+      "response": {
+        "params_new": [
+          {
+            "name": "usediops"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateAccount",
+      "request": {
+        "params_new": [
+          {
+            "name": "apikeyaccess",
+            "required": false
+          }
+        ],
+        "params_changed": [],
+        "params_removed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "apikeyaccess"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateDefaultNicForVirtualMachine",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateKubernetesSupportedVersion",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateStorageCapabilities",
+      "response": {
+        "params_new": [
+          {
+            "name": "usediops"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateStoragePool",
+      "response": {
+        "params_new": [
+          {
+            "name": "usediops"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateUser",
+      "request": {
+        "params_new": [
+          {
+            "name": "apikeyaccess",
+            "required": false
+          }
+        ],
+        "params_changed": [],
+        "params_removed": []
+      },
+      "response": {
+        "params_new": [
+          {
+            "name": "apikeyaccess"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateVMAffinityGroup",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateVirtualMachine",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateVmNicIp",
+      "response": {
+        "params_new": [
+          {
+            "name": "arch"
+          }
+        ]
+      }
+    },
+    {
+      "name": "updateZone",
+      "response": {
+        "params_new": [
+          {
+            "name": "routedmodeenabled"
+          }
+        ]
+      }
+    }
+  ],
+  "commands_added": [],
+  "commands_removed": [],
+  "commands_sync_changed": []
+}
