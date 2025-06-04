@@ -1,0 +1,90 @@
+Added commands:
+
+    listVmwareDcHosts (Lists the VMs in a Vmware Datacenter)
+
+Removed commands:
+
+Changes in command type (sync versus async)
+
+
+Changes in commands arguments:
+
+	findHostsForMigration
+
+		Response:
+
+			Removed parameters: id, averageload, capabilities, clusterid, clustername, clustertype, cpuallocated, cpuallocatedpercentage, cpuallocatedvalue, cpuallocatedwithoverprovisioning, cpunumber, cpuspeed, cpuused, cpuwithoverprovisioning, created, disconnected, disksizeallocated, disksizetotal, events, hahost, hasenoughcapacity, hosttags, hypervisor, hypervisorversion, ipaddress, islocalstorageactive, lastpinged, managementserverid, memoryallocated, memoryallocatedbytes, memoryallocatedpercentage, memorytotal, memoryused, memorywithoverprovisioning, name, networkkbsread, networkkbswrite, oscategoryid, oscategoryname, podid, podname, removed, resourcestate, state, suitableformigration, type, version, zoneid, zonename 
+
+	listNiciraNvpDeviceNetworks
+
+		Response:
+
+			New parameters: specifyvlan 
+
+	updateNetwork
+
+		Response:
+
+			New parameters: specifyvlan 
+
+	listNetscalerLoadBalancerNetworks
+
+		Response:
+
+			New parameters: specifyvlan 
+
+	listBrocadeVcsDeviceNetworks
+
+		Response:
+
+			New parameters: specifyvlan 
+
+	listNetworks
+
+		Response:
+
+			New parameters: specifyvlan 
+
+	listPaloAltoFirewallNetworks
+
+		Response:
+
+			New parameters: specifyvlan 
+
+	updatePortForwardingRule
+
+		Request:
+
+			New parameters: cidrlist (optional) 
+
+	listVmwareDcVms
+
+		Request:
+
+			New parameters: batchsize (optional), host (optional), token (optional) 
+
+			Removed parameters: keyword, page, pagesize 
+
+		Response:
+
+			New parameters: token 
+
+			Removed parameters: clusterid, clustername, cpucorepersocket, cpunumber, cpuspeed, hostid, hostname, memory, name, osdisplayname, osid, powerstate, disk(*), nic(*) 
+
+	createNetwork
+
+		Response:
+
+			New parameters: specifyvlan 
+
+	migrateNetwork
+
+		Response:
+
+			New parameters: specifyvlan 
+
+	importVm
+
+		Request:
+
+			New parameters: importinstancehostid (optional) 
